@@ -1,0 +1,118 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.h5
+
+# Virtual environments
+venv/
+.env/
+venv*/ 
+.env*/
+*.env
+
+# Conda environment folders
+conda-env/
+.vitality/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# -----------------------------
+# Streamlit
+# -----------------------------
+# Prevent internal Streamlit state from leaking
+.streamlit/secrets.toml
+.streamlit/*credentials*
+.streamlit/*/*credentials*
+
+# Uploaded temp files
+uploads/
+uploaded_files/
+temp/
+tmp/
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+log/
+
+# -----------------------------
+# Cache / Build
+# -----------------------------
+*.egg-info/
+*.dist/
+*.build/
+build/
+dist/
+pip-wheel-metadata/
+.cache/
+__pycache__/
+.wheels/
+
+# -----------------------------
+# PDF / Report Artifacts
+# -----------------------------
+*.pdf
+data/*.pdf
+reports/*.pdf
+
+# -----------------------------
+# API Keys - VERY IMPORTANT
+# -----------------------------
+# Never push actual keys
+api_keys.txt
+secrets.json
+keys.json
+.env
+.env.local
+.env.dev
+.env.prod
+
+# -----------------------------
+# Editor Folders
+# -----------------------------
+.vscode/
+.idea/
+*.iml
+
+# -----------------------------
+# Generated Vector DB
+# -----------------------------
+# If you store FAISS / vector DB locally
+faiss_index/
+vector_store/
+*.index
+*.bin
+*.db
+
+# -----------------------------
+# Audio / STT Cache
+# -----------------------------
+*.wav
+*.mp3
+*.m4a
+audio_cache/
+speech_cache/
+
+# -----------------------------
+# Python User Cache
+# -----------------------------
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
