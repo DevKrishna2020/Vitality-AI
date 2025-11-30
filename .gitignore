@@ -100,6 +100,9 @@ vector_store/
 *.bin
 *.db
 
+# ChromaDB persistence folder
+chroma_db/
+
 # -----------------------------
 # Audio / STT Cache
 # -----------------------------
@@ -115,4 +118,4 @@ speech_cache/
 .pytest_cache/
 .mypy_cache/
 .pyre/
-.pytype/
+.pytype/chroma_db/  

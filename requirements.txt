@@ -1,29 +1,35 @@
+# Core app
 streamlit==1.32.0
 pandas==2.2.1
 numpy==1.26.4
 requests==2.31.0
 python-dotenv==1.0.1
+protobuf>=3.20,<5          # required by streamlit 1.32.0
 
 # PDF extraction & parsing
-pymupdf==1.23.7      # fitz — text-layer PDF extraction
+pymupdf==1.23.7            # fitz — text-layer PDF extraction
 pypdf2==3.0.1
 pdfplumber==0.10.3
 
 # RAG + Embeddings + Vector DB
 faiss-cpu==1.7.4
 sentence-transformers==2.3.1
+chromadb                      # for Chroma vector DB
 
-# LLM Providers
-openai==1.12.0
-google-generativeai==0.3.2
-groq==0.4.2
+# LLM providers
+openai==0.28.0
+# use LangChain Gemini wrapper; raw google-generativeai removed to avoid conflict
+langchain-google-genai==3.2.0
+google-ai-generativelanguage>=0.9.0,<1.0.0
+langchain-groq==1.1.0
+groq>=0.30.0,<1.0.0
 transformers==4.37.2
 huggingface-hub==0.20.3
 
 # Tavily Search Tool
 tavily-python==0.3.1
 
-# Audio / speech recognition (if needed later)
+# Audio / speech recognition (optional)
 speechrecognition==3.10.0
 pyttsx3==2.90
 
